@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins:wght@100;400&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+img{
+    
+    width: 70%;
+    object-fit: contain;
+    
+}
+
+.myheader{
+    display:flex;
+    margin-top: 110px;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.myheader h1{
+    font-family: "PT Serif";
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: -0.045em;
+}
+ 
+.myheader h2{
+    font-family: "Poppins";
+    font-weight: 600;
+    line-height: 27px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.myheader p{
+    font-family: "Poppins";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    width: 439px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.container .special-img{
+    margin-top: 82px;
+    
+}
+
+.container .last-img{
+    margin-top: 140px;
+} 
+
+.container .wrap-img{
+    display:flex;
+}
+.container h1{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 18px;
+}
+.container p{
+    font-family: "PT Serif";
+    color: #000;
+    transform: rotate(90deg);
+    transform-origin: 0 0 0;
+    text-transform: uppercase;
+    line-height: 15.9px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-family: "PT Serif";
+    font-size: 12px;
+    width: 120px;
+   
+}
+
+footer{
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #A9A9A9;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 768px){
+    .myheader{
+        flex-direction: column;
+    }
+    .myheader h2{
+        margin-top: 65px;
+        
+    }
+    .main-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .container .last-img{
+        margin-top: 0;
+    }
+    .container .special-img{
+        margin-top: 0;
+    }
+
+    .container .img-alt{
+        margin-top: 70px;
+    }
+    .myheader,.main-container,.footer{
+        margin-left: 20px;
+
+    }
+
+   
+}
